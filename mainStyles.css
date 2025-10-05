@@ -1,0 +1,225 @@
+    @font-face{
+        font-family: "Pinar-Medium";
+        src: url(fonts/Pinar-Medium.woff2);
+    }
+    @font-face{
+        font-family: "Pinar-ExtraBold";
+        src: url(fonts/Pinar-DS3-ExtraBold.woff2);
+    }
+
+    @font-face{
+        font-family: "Pinar-SemiBold.woff2";
+        src: url(fonts/Pinar-SemiBold.woff2);
+    }
+
+    body{
+        margin: auto;
+        margin-top: 5rem;
+        background-color: #fff;
+    }
+    
+header {
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  font-family: "Pinar-SemiBold.woff2";
+  font-size: 14px;
+  height: 50px;   
+  width: 100%;
+  position: fixed;  
+  z-index: 1000;  
+  
+}
+
+
+    #headerSegment{
+        display: flex;
+        align-items: center;
+    }
+
+/* لوگو */
+.logo img {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 0.5rem;
+}
+
+/* منو */
+.menu ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  width: 80px;
+  justify-content: center;
+  
+}
+.menu ul li:hover{
+  background-color: #04aa6d;
+  color: #fff;
+}
+
+.menu ul li img {
+  height: 8px;
+  width: 8px;
+  margin: 0.5rem;
+}
+
+/* سرچ */
+.search {
+  display: flex;
+  align-items: center;
+  
+  flex: 1; /* برای اینکه وسط فضا بگیره */
+}
+
+#search {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  width: 40%;
+  height: 2.5rem;
+  direction: rtl;
+  font-size: 12px;
+  font-family: "Pinar-SemiBold.woff2";
+  background-image: url('images/svgexport-1.svg');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+
+#search:focus {
+  outline: none;
+  border: 3px solid #04aa6d;
+}
+
+#options {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0.2rem;
+}
+
+#options:hover {
+  background-color: rgba(105, 105, 105, 0.104);
+}
+
+#options img {
+  height: 1.7rem;
+  width: 1.7rem;
+}
+   
+    
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+ul img{
+  height: 8px;
+  width: 8px;
+}
+
+
+
+/* بخش items و signup برن سمت راست */
+.items {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* کل بخش بره به راست */
+}
+
+#item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  direction: rtl;
+  font-size: 12px;
+  font-family: "Pinar-SemiBold.woff2";
+  text-decoration: none;
+  color: black;
+  margin: 0 1rem;
+  gap: 1rem;
+}
+
+#item img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+/* دکمه ثبت نام */
+.signup {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem; /* فاصله از items */
+}
+
+#signup-btn {
+  height: 2.5rem;
+  width: 6rem;
+  border-radius: 10px;
+  background-color: #04aa6d;
+  border: 1px solid #04aa6d;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "Pinar-SemiBold.woff2";
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+#signup-btn:hover {
+  background-color: #007c4e;
+}
+
+.courses-bar {
+  top: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;   /* برای اسکرول افقی در موبایل */
+  background-color: #282A35; /* مثل w3schools */
+  height: 2rem;
+  margin-bottom: 4rem;
+  
+  width: 100%;
+  position: fixed;  
+  margin-top: 3rem;  
+  height: 2rem;
+}
+
+.courses-bar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10.5px 0 0;
+  font-size: 13px;
+  font-family: "Pinar-SemiBold.woff2";
+  white-space: nowrap; 
+  padding: 6px 10px;
+  
+}
+
+.courses-bar a:hover {
+  background-color: #1f1f22; /* سبز w3schools */
+}
+
+.courses-bar a.active {
+  background-color: #04aa6d;  /* سبز */
+  color: white;
+  
+}

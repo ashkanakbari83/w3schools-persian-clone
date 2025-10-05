@@ -1,0 +1,31 @@
+#sidebar{
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  background-color: #e7e9eb;
+
+  overflow-y: scroll;
+  
+}
+#sidebar p{
+  font-size: 21px;
+  padding-left: 1rem;
+}
+#sidebar a{
+  font-size: 16px;
+  text-decoration: none;
+  height: 1.7rem;
+  display: flex;
+  padding-left: 1rem;
+  align-items: center;
+  color: black;
+}
+#sidebar a:hover{
+  background-color: rgb(169, 169, 169);
+}
+
+
+#sidebar a.active {
+  background-color: #04AA6D;  /* سبز W3Schools */
+  color: white;
+}
