@@ -74,13 +74,13 @@ main{
 
 #title{
   width: 100%;
-  display: flex;
-    align-items: center;
+    display: flex
+;
     gap: 41rem;
-    justify-content: center;
-    
     direction: rtl;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center;
+    margin-right: 5rem;
 }
 
 #title p{
@@ -172,4 +172,51 @@ hr{
     font-size: 14px;
     font-family: "Pinar-Medium";
 }
+
+#lessons{
+    direction: rtl;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  margin-right: 5rem;
+}
+
+.example{
+    width: 95%;
+    background-color: #e7e9eb;
+    height: 25rem;
+    margin-bottom: 5rem;
+    align-items: flex-end;
+    border-radius: 5px;
+    display: flex
+;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+.code-example {
+  width: 95%;
+  background-color: white;     /* code background */
+  border-right: 4px solid rgb(0, 169, 0);/* green left border */
+  padding: 10px;               /* space inside */
+  margin: 15px 0;              /* space outside */
+  font-family: Consolas, "Courier New", monospace; /* code font */
+  font-size: 14px;
+  overflow-x: auto;            /* scroll if code too wide */
+  
+}
+code{
+  text-align: left;
+}
+
+.example button{
+  width: 10rem;
+}
+.example p{
+  font-size: 21px;
+}
+
+
 
